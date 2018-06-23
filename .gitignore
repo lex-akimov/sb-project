@@ -1,0 +1,16 @@
+.idea
+*.iml
+.settings/
+*.classpath
+*.project
+
+target/
+sb-project-portlet/target/
+sb-project-portlet-service/target/
+
+*.class
+*.log
+*.jar
+*.war
+*.zip
+

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="org.twobgroup.model.Foo">
+		<field name="uuid" type="String" />
+		<field name="fooId" type="long" />
+		<field name="userName" type="String" />
+	</model>
+	<model name="com.test.servicebuilder.model.Foo">
+		<field name="uuid" type="String" />
+		<field name="fooId" type="long" />
+		<field name="userName" type="String" />
+	</model>
+</model-hints>

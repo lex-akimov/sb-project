@@ -1,0 +1,35 @@
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+
+<service-builder package-path="com.test.servicebuilder">
+	<namespace>test</namespace>
+	<entity name="Foo" uuid="true" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="fooId" type="long" primary="true" />
+
+		<!-- Group instance -->
+
+		<!-- Audit fields -->
+		<column name="userName" type="String" />
+
+		<!-- Other fields -->
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="fooId" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="userName" return-type="Collection">
+			<finder-column name="userName" />
+		</finder>
+
+		<!-- References -->
+
+		<reference package-path="com.liferay.portlet.asset" entity="AssetEntry" />
+		<reference package-path="com.liferay.portlet.asset" entity="AssetTag" />
+	</entity>
+</service-builder>
