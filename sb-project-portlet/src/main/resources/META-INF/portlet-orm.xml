@@ -7,18 +7,6 @@
 			<access>PROPERTY</access>
 		</persistence-unit-defaults>
 	</persistence-unit-metadata>
-	<mapped-superclass class="org.twobgroup.model.impl.FooModelImpl">
-		<attributes>
-			<id name="fooId" />
-			<basic name="uuid">
-				<column name="UUID_" />
-			</basic>
-			<basic name="userName" />
-			<transient name="modelAttributes" />
-			<transient name="primaryKey" />
-			<transient name="primaryKeyObj" />
-		</attributes>
-	</mapped-superclass>
 	<mapped-superclass class="com.test.servicebuilder.model.impl.FooModelImpl">
 		<attributes>
 			<id name="fooId" />
@@ -31,10 +19,6 @@
 			<transient name="primaryKeyObj" />
 		</attributes>
 	</mapped-superclass>
-	<entity class="org.twobgroup.model.impl.FooImpl" name="Foo">
-		<table name="test_Foo" />
-		<attributes />
-	</entity>
 	<entity class="com.test.servicebuilder.model.impl.FooImpl" name="Foo">
 		<table name="test_Foo" />
 		<attributes />

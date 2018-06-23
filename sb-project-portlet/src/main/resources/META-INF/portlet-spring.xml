@@ -1,9 +1,6 @@
 <?xml version="1.0"?>
 
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-	<bean id="org.twobgroup.service.FooLocalService" class="org.twobgroup.service.impl.FooLocalServiceImpl" />
-	<bean id="org.twobgroup.service.FooService" class="org.twobgroup.service.impl.FooServiceImpl" />
-	<bean id="org.twobgroup.service.persistence.FooPersistence" class="org.twobgroup.service.persistence.FooPersistenceImpl" parent="basePersistence" />
 	<bean id="com.test.servicebuilder.service.FooLocalService" class="com.test.servicebuilder.service.impl.FooLocalServiceImpl" />
 	<bean id="com.test.servicebuilder.service.FooService" class="com.test.servicebuilder.service.impl.FooServiceImpl" />
 	<bean id="com.test.servicebuilder.service.persistence.FooPersistence" class="com.test.servicebuilder.service.persistence.FooPersistenceImpl" parent="basePersistence" />
